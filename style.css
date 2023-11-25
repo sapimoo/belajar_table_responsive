@@ -1,0 +1,81 @@
+/* Ukuran Layar Kecil */
+.baris {
+    box-sizing: border-box;
+}
+.kolom {
+    width: 100%;
+    height: 120%;
+    background-color: aquamarine;
+    margin: 3px;
+    box-sizing: border-box;
+    float: left;
+    padding: 9px;
+}
+h2 {
+    font-size: 10pt;
+}
+p {
+    font-size: 9pt
+}
+
+/* Ukuran Layar Mobile phone minimal resolusi 576px */
+@media (min-width: 576px) {
+    .kolom {
+        width: calc(50% - 6px);
+    }
+    h2 {
+        font-size: 11pt;
+    }
+    p {
+        font-size: 10pt;
+    }
+}
+
+/* Ukuran Layar tablet minimal resolusi 768px */
+@media (min-width: 768px) {
+    .kolom {
+        width: calc(100vw / 3 - 10px);
+    }
+    h2 {
+        font-size: 13pt;
+    }
+    p {
+        font-size: 12pt;
+    }
+}
+
+/* Ukuran Layar desktop minimal resolusi 992px */
+@media (min-width: 992px) {
+    .kolom {
+        width: calc(100vw / 4 - 10px);
+    }
+    h2 {
+        font-size: 14pt;
+    }
+    p {
+        font-size: 12pt;
+    }
+}
+
+/* Ukuran Layar besar minimal resolusi 1200px */
+@media (min-width: 1200px) {
+    .kolom {
+        width: calc(100vw / 5 - 10px);
+    }
+    h2 {
+        font-size: 19pt;
+    }
+    p {
+        font-size: 16pt;
+    }
+}
+
+/* Ukuran Layar sangat besar minimal resolusi 1400px */
+@media (min-width: 1400px) {
+    h2 {
+        font-size: 20pt;
+    }
+    p {
+        font-size: 18pt;
+    }
+}
